@@ -1,0 +1,141 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height:60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6vw 4vw;
+    box-shadow: 0 40px 80px rgba(32, 178, 170, 1.7);
+    
+    z-index: 100;
+}
+.nav-part2{
+    display: flex;
+    justify-content: center;
+    gap:4vw;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav h4{
+    font-size: 1vw;
+    font-weight: 800;
+}
+.nav i{
+    font-size: 1.5vw;
+    display: none;
+}
+.content{
+    height:calc(100% - 60px);
+    width: 100%;
+    /* background-color: rgb(235, 193, 179); */
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 7vw  7vw;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    
+}
+.left h1{
+    font-size: 4vw;
+    font-family: 'Gilroy';
+    line-height: 4.4vw;
+}
+.left span{
+    color: lightseagreen;
+}
+.left p{
+    font-size: 1vw;
+    font-weight:900;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+button{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border-radius: 5px ;
+    font-weight:700;
+    border: none;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    
+}
+.left p::selection{
+    color:mediumspringgreen
+}
+@media(max-width:600px){
+    .nav{
+        background-color: lightseagreen;
+        color: blanchedalmond;
+        padding: 0 6vw;
+    }
+    .nav h2{
+        font-size: 6vw;
+        font-weight: 700;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav i{
+        font-size: 6vw;
+        display: initial;
+    }
+    .content{
+        height: calc(100% - 60px);
+        width: 100%;
+        flex-direction: column;
+    }
+    .left{
+        height: fit-content;
+        width: 100%;
+    }
+    .left h1{
+        font-size: 11vw;
+        line-height: 3vw;
+    }
+    .left span{
+        line-height: 8vw;
+    }
+    .left p{
+        font-size: 6vw;
+    }
+    .right{
+        width: 100%;
+    }
+    .button{
+        font-size: 8vw;
+        font-weight: 1000;
+    }
+}
